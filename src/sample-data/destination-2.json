@@ -1,0 +1,142 @@
+[
+  {
+    "miles": 809,
+    "origin": {
+      "city": "Stevens Point",
+      "state": "WI",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Trenton",
+      "state": "NJ",
+      "dropoff": {
+        "start": "2018-11-02T10:00:00.000Z",
+        "end": "2018-11-02T15:00:00.000Z"
+      }
+    },
+    "offer": 1213.5
+  },
+  {
+    "miles": 1615,
+    "origin": {
+      "city": "Tuscaloosa",
+      "state": "AL",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T12:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Ravenna",
+      "state": "OH",
+      "dropoff": {
+        "start": "2018-11-05T09:00:00.000Z",
+        "end": "2018-11-05T10:00:00.000Z"
+      }
+    },
+    "offer": 2422.5
+  },
+  {
+    "miles": 3122,
+    "origin": {
+      "city": "Salem",
+      "state": "OR",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T14:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Seminole",
+      "state": "OK",
+      "dropoff": {
+        "start": "2018-11-07T11:00:00.000Z",
+        "end": "2018-11-07T12:00:00.000Z"
+      }
+    },
+    "offer": 4683
+  },
+  {
+    "miles": 765,
+    "origin": {
+      "city": "Williamson",
+      "state": "WV",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T15:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Uniontown",
+      "state": "PA",
+      "dropoff": {
+        "start": "2018-11-01T09:00:00.000Z",
+        "end": "2018-11-01T09:00:00.000Z"
+      }
+    },
+    "offer": 1147.5
+  },
+  {
+    "miles": 69,
+    "origin": {
+      "city": "Waukegan",
+      "state": "IL",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Uniontown",
+      "state": "PA",
+      "dropoff": {
+        "start": "2018-10-31T11:00:00.000Z",
+        "end": "2018-10-31T16:00:00.000Z"
+      }
+    },
+    "offer": 103.5
+  },
+  {
+    "miles": 1705,
+    "origin": {
+      "city": "Rocky Mount",
+      "state": "NC",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Texarkana",
+      "state": "TX",
+      "dropoff": {
+        "start": "2018-11-05T10:00:00.000Z",
+        "end": "2018-11-05T17:00:00.000Z"
+      }
+    },
+    "offer": 2557.5
+  },
+  {
+    "miles": 134,
+    "origin": {
+      "city": "Trinidad",
+      "state": "CO",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T13:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Rutland",
+      "state": "VT",
+      "dropoff": {
+        "start": "2018-10-31T11:00:00.000Z",
+        "end": "2018-10-31T11:00:00.000Z"
+      }
+    },
+    "offer": 201
+  }
+]

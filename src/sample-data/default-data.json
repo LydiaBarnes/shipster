@@ -1,0 +1,382 @@
+[
+  {
+    "miles": 69,
+    "origin": {
+      "city": "Waukegan",
+      "state": "IL",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Uniontown",
+      "state": "PA",
+      "dropoff": {
+        "start": "2018-10-31T11:00:00.000Z",
+        "end": "2018-10-31T16:00:00.000Z"
+      }
+    },
+    "offer": 103.5
+  },
+  {
+    "miles": 134,
+    "origin": {
+      "city": "Trinidad",
+      "state": "CO",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T13:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Rutland",
+      "state": "VT",
+      "dropoff": {
+        "start": "2018-10-31T11:00:00.000Z",
+        "end": "2018-10-31T11:00:00.000Z"
+      }
+    },
+    "offer": 201
+  },
+  {
+    "miles": 305,
+    "origin": {
+      "city": "Saint Joseph",
+      "state": "MI",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T14:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Saint Cloud",
+      "state": "MN",
+      "dropoff": {
+        "start": "2018-10-31T11:00:00.000Z",
+        "end": "2018-10-31T12:00:00.000Z"
+      }
+    },
+    "offer": 457.5
+  },
+  {
+    "miles": 675,
+    "origin": {
+      "city": "Waterbury",
+      "state": "CT",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T15:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Saint Joseph",
+      "state": "MI",
+      "dropoff": {
+        "start": "2018-11-01T09:00:00.000Z",
+        "end": "2018-11-01T12:00:00.000Z"
+      }
+    },
+    "offer": 1012.5
+  },
+  {
+    "miles": 765,
+    "origin": {
+      "city": "Williamson",
+      "state": "WV",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T15:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Uniontown",
+      "state": "PA",
+      "dropoff": {
+        "start": "2018-11-01T09:00:00.000Z",
+        "end": "2018-11-01T09:00:00.000Z"
+      }
+    },
+    "offer": 1147.5
+  },
+  {
+    "miles": 809,
+    "origin": {
+      "city": "Stevens Point",
+      "state": "WI",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Trenton",
+      "state": "NJ",
+      "dropoff": {
+        "start": "2018-11-02T10:00:00.000Z",
+        "end": "2018-11-02T15:00:00.000Z"
+      }
+    },
+    "offer": 1213.5
+  },
+  {
+    "miles": 914,
+    "origin": {
+      "city": "Staunton",
+      "state": "VA",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T13:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Yakima",
+      "state": "WA",
+      "dropoff": {
+        "start": "2018-11-02T11:00:00.000Z",
+        "end": "2018-11-02T16:00:00.000Z"
+      }
+    },
+    "offer": 1371
+  },
+  {
+    "miles": 982,
+    "origin": {
+      "city": "Sioux Falls",
+      "state": "SD",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T12:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Wilmington",
+      "state": "NC",
+      "dropoff": {
+        "start": "2018-11-02T10:00:00.000Z",
+        "end": "2018-11-02T15:00:00.000Z"
+      }
+    },
+    "offer": 1473
+  },
+  {
+    "miles": 1153,
+    "origin": {
+      "city": "Springfield",
+      "state": "MO",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T13:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Saint Paul",
+      "state": "MN",
+      "dropoff": {
+        "start": "2018-11-02T12:00:00.000Z",
+        "end": "2018-11-02T15:00:00.000Z"
+      }
+    },
+    "offer": 1729.5
+  },
+  {
+    "miles": 1293,
+    "origin": {
+      "city": "Sault Sainte Marie",
+      "state": "MI",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T12:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Saint Augustine",
+      "state": "FL",
+      "dropoff": {
+        "start": "2018-11-05T12:00:00.000Z",
+        "end": "2018-11-05T16:00:00.000Z"
+      }
+    },
+    "offer": 1939.5
+  },
+  {
+    "miles": 1615,
+    "origin": {
+      "city": "Tuscaloosa",
+      "state": "AL",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T12:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Ravenna",
+      "state": "OH",
+      "dropoff": {
+        "start": "2018-11-05T09:00:00.000Z",
+        "end": "2018-11-05T10:00:00.000Z"
+      }
+    },
+    "offer": 2422.5
+  },
+  {
+    "miles": 1686,
+    "origin": {
+      "city": "Sheridan",
+      "state": "WY",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Traverse City",
+      "state": "MI",
+      "dropoff": {
+        "start": "2018-11-05T12:00:00.000Z",
+        "end": "2018-11-05T15:00:00.000Z"
+      }
+    },
+    "offer": 2529
+  },
+  {
+    "miles": 1705,
+    "origin": {
+      "city": "Rocky Mount",
+      "state": "NC",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T17:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Texarkana",
+      "state": "TX",
+      "dropoff": {
+        "start": "2018-11-05T10:00:00.000Z",
+        "end": "2018-11-05T17:00:00.000Z"
+      }
+    },
+    "offer": 2557.5
+  },
+  {
+    "miles": 1898,
+    "origin": {
+      "city": "Sherman",
+      "state": "TX",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T14:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Wisconsin Dells",
+      "state": "WI",
+      "dropoff": {
+        "start": "2018-11-05T11:00:00.000Z",
+        "end": "2018-11-05T11:00:00.000Z"
+      }
+    },
+    "offer": 2847
+  },
+  {
+    "miles": 2251,
+    "origin": {
+      "city": "Saint Johnsbury",
+      "state": "VT",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T15:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Waycross",
+      "state": "GA",
+      "dropoff": {
+        "start": "2018-11-05T09:00:00.000Z",
+        "end": "2018-11-05T14:00:00.000Z"
+      }
+    },
+    "offer": 3376.5
+  },
+  {
+    "miles": 2521,
+    "origin": {
+      "city": "Wichita Falls",
+      "state": "TX",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T12:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Twin Falls",
+      "state": "ID",
+      "dropoff": {
+        "start": "2018-11-06T09:00:00.000Z",
+        "end": "2018-11-06T11:00:00.000Z"
+      }
+    },
+    "offer": 3781.5
+  },
+  {
+    "miles": 2766,
+    "origin": {
+      "city": "Seattle",
+      "state": "WA",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T15:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Santa Barbara",
+      "state": "CA",
+      "dropoff": {
+        "start": "2018-11-06T10:00:00.000Z",
+        "end": "2018-11-06T13:00:00.000Z"
+      }
+    },
+    "offer": 4149
+  },
+  {
+    "miles": 2936,
+    "origin": {
+      "city": "Salinas",
+      "state": "CA",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T14:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "San Jose",
+      "state": "CA",
+      "dropoff": {
+        "start": "2018-11-07T12:00:00.000Z",
+        "end": "2018-11-07T14:00:00.000Z"
+      }
+    },
+    "offer": 4404
+  },
+  {
+    "miles": 3122,
+    "origin": {
+      "city": "Salem",
+      "state": "OR",
+      "pickup": {
+        "start": "2018-10-30T12:00:00.000Z",
+        "end": "2018-10-30T14:00:00.000Z"
+      }
+    },
+    "destination": {
+      "city": "Seminole",
+      "state": "OK",
+      "dropoff": {
+        "start": "2018-11-07T11:00:00.000Z",
+        "end": "2018-11-07T12:00:00.000Z"
+      }
+    },
+    "offer": 4683
+  }
+]

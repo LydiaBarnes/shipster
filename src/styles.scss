@@ -1,0 +1,374 @@
+/* 
+  Using CSS vars instead of Sass vars for media queries, is cleaner.
+  If we care about IE11, I'd just switch to Sass vars.
+
+  Note that base styles are all for mobile,
+  and the media queries capture styles for larger devices and desktop
+*/
+:root {
+  --spacing: 8px;
+  --font-size-base: 16px;
+  --font-size-med: 1.2rem;
+  --font-size-large: 1.4rem;
+  --font-size-xlarge: 1.6rem;
+  --font-size-small: 0.8rem;
+  --shipping-truck-size: 1.5rem;
+}
+
+$global-border: 1px solid lightgray;
+$border-radius: 4px;
+$text-color: #333;
+$highlight-color: #1079a5;
+$highlight-color-bg: #eaf7fd;
+$sort-color: #f65335;
+$less-important-gray: grey;
+$background-gray: #f0f0f0;
+$divider-width: 3px;
+$max-content-width: 920px;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $background-gray;
+  font-size: var(--font-size-base);
+  font-family: "Helvetica", helvetica, sans-serif;
+  color: $text-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: none;
+  padding: var(--spacing);
+  background-color: $highlight-color;
+  color: #fff;
+  font-size: var(--font-size-base);
+  font-weight: 300;
+  cursor: pointer;
+  white-space: nowrap;
+
+  & + & {
+    margin-left: var(--spacing);
+  }
+
+  &:hover {
+    background-color: $sort-color;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+}
+
+/* content areas */
+/* --------------------------------- */
+
+.app {
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    flex: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $highlight-color;
+    padding: var(--spacing);
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  &-main {
+    flex: 1;
+    width: 100%;
+    max-width: $max-content-width;
+    margin: calc(var(--spacing) * 2) auto 0;
+
+    padding: 0 var(--spacing);
+  }
+
+  &-footer {
+    flex: none;
+
+    width: 100%;
+    max-width: $max-content-width;
+    margin: 0 auto;
+    padding: var(--spacing);
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* component styles */
+/* --------------------------------- */
+
+/* sort by select */
+.sort-select {
+  margin-left: auto;
+
+  width: 25%;
+  /* purposefully making consistent across sizes */
+  height: 32px;
+  min-width: max-content;
+  border: none;
+  border-radius: $border-radius;
+  font-size: 0.8rem;
+  color: $text-color;
+}
+
+.loading-spinner {
+  /* rough center/center */
+  position: absolute;
+  left: calc(50% - 0.5em);
+  top: calc(50% - 2em);
+}
+
+/* shipping card component */
+.shipping-card {
+  /* for abs positioned selected label */
+  position: relative;
+  /* just in case we get some misbehaving content */
+  overflow: hidden;
+
+  width: 100%;
+  border: $global-border;
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 0 5px #ccc;
+  padding-top: calc(var(--spacing) * 2);
+
+  & + & {
+    margin-top: calc(var(--spacing) * 2);
+  }
+
+  /* Date/time block */
+  &-location {
+    display: flex;
+    flex-direction: column;
+    padding: 0 calc(var(--spacing) * 2);
+    font-size: var(--font-size-med);
+
+    &-date {
+      font-weight: 300;
+    }
+
+    &-city {
+      font-size: var(--font-size-large);
+    }
+
+    &-state {
+      font-size: var(--font-size-xlarge);
+    }
+  }
+
+  &-dropoff {
+    text-align: right;
+  }
+
+  /* direction graphic in between the date/time blocks */
+  &-direction {
+    /* align truck icon center/center */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: $divider-width;
+    flex: 1;
+    /* arbitrary, so it doesn't get super smooshed */
+    min-width: 150px;
+
+    /* for pos:abs lines */
+    position: relative;
+    /* eyeballed */
+    //height: 80px;
+    align-self: center;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $less-important-gray;
+      z-index: 0;
+
+      top: 0;
+      height: 100%;
+      width: 50%;
+      margin: 0 calc(var(--spacing) / 2);
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+
+    svg {
+      /* hack to make z-index work */
+      position: relative;
+      /* appear over bar */
+      z-index: 1;
+      padding: calc(var(--spacing) / 4);
+      background-color: #fff;
+      font-size: var(--shipping-truck-size);
+      color: $less-important-gray;
+    }
+  }
+}
+
+/* Container around first row */
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The second container row for miles/offer */
+.details-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing);
+  padding: var(--spacing) calc(var(--spacing) * 2);
+  border-top: $global-border;
+  font-size: var(--font-size-large);
+}
+
+/* The third container row for optional content */
+.additional-details-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 0.9em;
+
+  background-color: $highlight-color-bg;
+  padding: calc(var(--spacing) * 2);
+  box-shadow: inset 0 5px 10px -5px #ccc;
+
+  & > * {
+    flex: 1;
+
+    + * {
+      margin-left: var(--spacing);
+      padding-left: var(--spacing);
+      border-left: $global-border;
+    }
+  }
+
+  svg {
+    margin: 0 auto var(--spacing);
+    font-size: 2rem;
+    color: $highlight-color;
+  }
+}
+
+/* Generic markup utilities */
+
+.item-label {
+  font-size: var(--font-size-base);
+  color: $less-important-gray;
+  vertical-align: middle;
+  /* don't show for mobile */
+  display: none;
+}
+
+/* Highlight states for sorting */
+/* --------------------------------- */
+
+/* bubble highlight state for offer and miles */
+.miles .shipping-card-distance,
+.price .shipping-card-offer {
+  background-color: $sort-color;
+  color: #fff;
+  border-radius: $border-radius;
+  padding: 0 calc(var(--spacing) / 4);
+}
+
+/* highlight the left side of the bar when left side sort is selected */
+.origin,
+.pickupDate {
+  .shipping-card-direction::before {
+    background-color: $sort-color;
+  }
+}
+
+/* highlight the right side of the bar when right side sort is selected */
+.destination,
+.dropoffDate {
+  .shipping-card-direction::after {
+    background-color: $sort-color;
+  }
+}
+
+/* highlight the text in location block corresponding with sort criteria  */
+.origin .shipping-card-pickup .shipping-card-location-state,
+.origin .shipping-card-pickup.shipping-card-location-city,
+.pickupDate .shipping-card-pickup.shipping-card-location-date,
+.destination .shipping-card-dropoff .shipping-card-location-state,
+.destination .shipping-card-dropoff.shipping-card-location-city,
+.dropoffDate .shipping-card-dropoff.shipping-card-location-date {
+  color: $sort-color;
+  font-style: italic;
+}
+
+/* highlight the truck if any sort criteria related to location block is selected */
+.pickupDate,
+.dropoffDate,
+.origin,
+.destination {
+  .shipping-card-direction svg {
+    color: $sort-color;
+  }
+}
+
+/* media queries */
+/* --------------------------------- */
+
+/* a made up value that likely captures smaller phones in portrait */
+@media screen and (min-width: 500px) {
+  :root {
+    --shipping-truck-size: 3rem;
+  }
+
+  .additional-details-row {
+    font-size: 1.2rem;
+
+    svg {
+      font-size: 3rem;
+    }
+  }
+
+  /* unhide for bigger devices */
+  .item-label {
+    display: block;
+  }
+}
+
+/* iphone 6/7/8 landscape width breakpoint */
+@media screen and (min-width: 668px) {
+  :root {
+    --base-font-size: 18px;
+    --spacing: 16px;
+    --font-size-med: 1.8rem;
+    --font-size-large: 2rem;
+    --font-size-xlarge: 2.4rem;
+    --shipping-truck-size: 4rem;
+  }
+}
